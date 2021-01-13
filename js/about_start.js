@@ -20,7 +20,7 @@ $('.environment').text(states.join(' - '));
 
 // Install the 'dismiss with escape key' handler
 $(document).on('keydown', e => {
-  if (e.keyCode === 27) {
+  if (e.code === "Escape") {
     window.closeAbout();
   }
 });
